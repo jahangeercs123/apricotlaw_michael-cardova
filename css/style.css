@@ -1,0 +1,1219 @@
+/* global css end */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1166px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+
+span {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.yellow-color {
+    color: #FF7B14;
+}
+
+/* cssm for header */
+header {
+     position: absolute;
+    width: 100%;
+    background-color: white;
+    z-index: 9999;
+    position: sticky;
+    top: 0px;
+}
+
+.header-inner {
+    display: flex;
+    height: 78px;
+    align-items: center;
+    margin-left: 34px;
+    justify-content: space-between;
+}
+
+.header-inner .logo-image {
+    max-width: 673px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+nav ul a {
+    font-size: 16px;
+    font-family: 'NunitoSans-Regular';
+    color: #707070;
+    padding-bottom: 28px;
+}
+
+nav ul a i {
+    margin-left: 5px;
+    color: #FF7B14;
+}
+
+.sub-items a:hover {
+    background-color: #572B0A;
+}
+
+.contact-information {
+    background-color: #572B0A;
+    width: 295px;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-information a {
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Halant-Bold';
+    line-height: 1;
+}
+
+.contact-information span {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'NunitoSans-Bold';
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+
+.nav-btn {
+    background-color: #FF7B14;
+    padding: 9px 0px;
+    width: 118px;
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    border-radius: 30px;
+}
+
+nav ul:last-child {
+    position: relative;
+}
+
+nav ul li:last-child::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    border: 0.5px solid #FF7B14;
+    top: 0px;
+    margin-left: -12px;
+}
+
+/* nav bar hover  */
+nav ul li .sub-items {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 58px;
+    background-color: #FF7B14;
+    width: 240px;
+
+}
+
+nav ul li .sub-items a {
+    display: block;
+    border-bottom: 1px solid #ada7a7;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    font-size: 16px;
+    font-family: 'NunitoSans-Regular';
+}
+
+/* nav ul li :hover {
+    color: #FF7B14;
+} */
+
+nav ul li:hover .sub-items {
+    display: block;
+}
+
+nav ul li:nth-of-type(6) a {
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.banner {
+    background-image: url('../images/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .banner-wrapper {
+    display: flex;
+    height: calc(100vh - 78px);
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 91px;
+}
+
+.banner-top {
+    width: 944px;
+}
+
+.banner .banner-top h1 {
+    color: #fff;
+    font-family: 'Halant';
+    font-size: 70px;
+    word-spacing: 8px;
+    letter-spacing: 4px;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.banner .banner-top p {
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'NunitoSans-Regular';
+    font-size: 24px;
+    word-spacing: 2px;
+}
+
+.bold {
+    font-size: 74px;
+    font-family: 'Halant-Bold';
+}
+
+.banner-wrapper .banner-top a {
+    color: #fff;
+    font-size: 22PX;
+    background-color: #FF7B14;
+    max-width: 286px;
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    border-radius: 27px;
+    padding: 14px;
+    font-family: 'Oswald-Regular';
+    line-height: 1.5;
+    transition: all 0.5s ease-in-out;
+}
+
+.banner-wrapper .banner-top a:hover {
+    background-color: #572B0A;
+}
+
+.author-slider-text {
+    width: 493px;
+    margin-left: 35px;
+    margin-top: -5px;
+}
+
+.author-slider-text p {
+    font-size: 19px;
+    font-family: 'NunitoSans-Regular';
+    color: #fff;
+
+}
+
+.banner-author-slider {
+    margin-top: 20px;
+}
+
+.author-slider-text span {
+    font-size: 16px;
+    display: block;
+    text-align: right;
+    font-family: 'NunitoSans-Regular';
+}
+
+.banner-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 474px;
+    margin-top: 10px;
+}
+
+.banner-cards .card {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'NunitoSans-Regular';
+}
+
+.google-reviews {
+    margin-top: 15px;
+}
+
+.google-reviews h5 {
+    font-size: 44px;
+    font-family: 'NunitoSans-Regular';
+    color: #fff;
+    font-weight: 800;
+
+}
+
+.google-reviews h6 {
+    font-size: 24px;
+    font-family: 'NunitoSans-Regular';
+    color: #fff;
+    font-weight: 500;
+}
+
+.border-hover {
+    cursor: pointer;
+}
+
+.border-hover :hover {
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transition-delay: 0.2s;
+}
+
+/* css  for lawyer frame */
+.mid-line::before {
+    content: '';
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 135px;
+    width: 1px;
+    margin-inline: auto;
+    margin-top: -65px;
+    background-color: #FF7B14;
+}
+
+.lawyer-frame {
+    background-color: #291506;
+    position: relative;
+}
+
+.frame-text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 155px;
+    padding-bottom: 150px;
+
+
+}
+
+.frame-text-wrapper .frame-text-left {
+    width: 628px;
+}
+
+.frame-text-wrapper .frame-text-left h3 {
+    color: #fff;
+    width: 627px;
+    font-size: 58px;
+    font-family: 'Halant-Regular';
+    font-weight: 400;
+    line-height: 78px;
+
+}
+
+.frame-text-wrapper .frame-text-right {
+    width: 352px;
+}
+
+.frame-text-wrapper .frame-text-right p {
+    color: #fff;
+    font-family: 'NunitoSans-Regular';
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 38px;
+}
+
+.member-slider {
+    padding-top: 150px;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.slider-items .item p {
+    color: #fff;
+    margin-top: 15px;
+    line-height: 28px;
+    width: 352px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'NunitoSans-Regular';
+
+}
+
+.member-slider h5 {
+    color: #FF7B14;
+    margin-bottom: 15px;
+    line-height: 70px;
+    font-size: 36px;
+    font-family: 'Halant-Regular';
+    font-weight: 500;
+}
+
+.slider-items .item img {
+    text-align: center;
+    display: inline-block;
+}
+
+.slider-items .slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slider-items .slick-dots button {
+    font-size: 0px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #FF7B14;
+    padding: 0;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #fff;
+}
+
+.lawyer-man-logo {
+    position: absolute;
+    left: 0px;
+    display: flex;
+    align-content: center;
+}
+
+.fee-section {
+    background-color: #FF7B14;
+}
+
+.fee-cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0px 40px;
+
+}
+
+.fee-cards a {
+    max-width: 255px;
+    width: 100%;
+    background-color: #fff;
+    color: #572B0A;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 61px;
+    align-items: center;
+    margin-top: 37px;
+    font-family: 'Oswald-Regular';
+    line-height: 26px;
+    transition: all 0.5s ease-in-out;
+}
+
+.fee-cards a:hover {
+    background-color: #291506;
+    color: #fff;
+}
+
+.card-item {
+    position: relative;
+    text-align: center
+}
+
+.fee-section .card-item::after {
+    content: '';
+    width: 1px;
+    height: 80%;
+    position: absolute;
+    background-color: #704806;
+    top: 0px;
+    left: 0px;
+    margin-left: -12px;
+
+}
+
+.fee-section .card-item:first-child::after {
+    background-color: transparent;
+}
+
+.card-item h3 {
+    font-size: 58px;
+    font-family: 'Oswald-Regular';
+    line-height: 78px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.card-item p {
+    margin: 0 auto;
+    width: 250px;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Halant-Regular';
+
+}
+
+.brown-color {
+    color: #572B0A;
+}
+
+/* css for practice-area */
+.practice-area {
+    background-image: url('../images/practice-area-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.practice-area-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 70px;
+
+}
+
+.practice-area-wrapper h1 {
+    transform: rotate(-90deg);
+    font-size: 91px;
+    line-height: 78px;
+    font-family: 'Halant-Bold';
+    letter-spacing: 21px;
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    bottom: 90px;
+    opacity: 0.1;
+    left: 33%;
+    transform-origin: left;
+}
+
+.practice-area-right {
+    width: 315px;
+    margin-right: 55px;
+}
+
+.practice-area-right p {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'NunitoSans-Regular';
+    margin-bottom: 70px;
+    width: 352px;
+}
+
+.practice-area-right h6 {
+    font-size: 24px;
+    color: #FF7B14;
+    font-family: 'Halant-Regular';
+    margin-bottom: 22px;
+    line-height: 1;
+}
+
+.practice-area-left {
+    width: 315px;
+    margin-right: 70px;
+    margin-top: 82px;
+}
+
+.practice-area-left p {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'NunitoSans-Regular';
+    margin-bottom: 70px;
+    width: 343px;
+}
+
+.practice-area-left h6 {
+    font-size: 24px;
+    font-family: 'Halant-Regular';
+    color: #FF7B14;
+    line-height: 1;
+    margin-bottom: 22px;
+}
+
+/*####### our frame ###### */
+.our-firm {
+    padding-top: 100px;
+    padding-bottom: 170px;
+    background-color: #FFDBBF;
+    position: relative;
+}
+
+.frame-heading-wrapper h4 {
+    font-family: 'Halant-Regular';
+    font-size: 58px;
+    color: #572B0A;
+}
+
+.frame-heading-wrapper h2 {
+    font-family: 'Halant-bold';
+    letter-spacing: 10px;
+    font-size: 58px;
+    font-size: 122px;
+    color: #FF7B14;
+}
+
+.frame-text-pragraph {
+    display: flex;
+    flex-direction: column;
+    z-index: 235;
+    position: relative;
+}
+
+.text-wrapper-top {
+    width: 533px;
+}
+
+.text-wrapper-top p {
+    font-size: 16px;
+    font-family: 'NunitoSans-Regular';
+    color: #272727;
+    line-height: 29px;
+}
+
+.text-wrapper-buttom {
+    width: 352px;
+}
+
+.text-wrapper-buttom h4 {
+    font-size: 28px;
+    font-family: 'Halant-Regular';
+    line-height: 70px;
+    border-bottom: 2px solid #FF7B14;
+    display: inline-block;
+    margin-bottom: 19px;
+}
+
+.text-wrapper-buttom p {
+    font-size: 16px;
+    font-family: 'NunitoSans-Regular';
+    color: #272727;
+    line-height: 29px;
+}
+
+.author-picture {
+    position: absolute;
+    top: 370px;
+    right: 0px;
+
+}
+
+.author-picture:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-color: green;
+    border: 2px solid;
+    border: 2px solid white;
+    margin-top: 19px;
+    margin: 20px 0px 0px -20px;
+}
+
+.img-overlay {
+    position: absolute;
+    bottom: -22px;
+    right: -244px;
+
+}
+
+.overlay-text p {
+    position: absolute;
+    bottom: -45px;
+    right: -236px;
+    line-height: 1.5;
+    width: 720px;
+    z-index: 9999;
+    font-size: 32px;
+    font-family: 'Halant-Regular';
+    color: #272727;
+}
+
+.clients-right {
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+
+.clients-right .clients-right-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.clients-right .clients-right-title h2 {
+    color: #FF7B14;
+    font-size: 42px;
+    font-family: 'Halant-Regular';
+}
+
+.clients-right .clients-right-title p {
+    font-size: 22px;
+    font-family: 'NunitoSans-Regular';
+}
+
+.clients-right-cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.clients-card {
+    text-align: center;
+    width: 350px;
+}
+
+.clients-card img {
+    margin-bottom: 30px;
+}
+
+.clients-card h3 {
+    color: #FF7B14;
+    font-size: 24px;
+    font-family: 'Oswald-Regular';
+    margin-bottom: 30px;
+}
+
+.clients-card p {
+    font-size: 16px;
+    font-family: 'NunitoSans-Regular';
+    line-height: 1.5;
+}
+
+/* css for clients-feedback section */
+.clients-feedback-wrapper {
+    width: 679px;
+    background-color: rgba(87, 43, 10, 0.9);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 130px;
+    padding-left: 50px;
+    padding-bottom: 90px;
+    padding-right: 25px;
+}
+
+.clients-feedback-wrapper .about-michael h4 {
+    font-size: 58px;
+    font-family: 'Halant-Regular';
+    color: #fff;
+    line-height: 1.5;
+
+}
+
+.clients-feedback-wrapper .about-michael h2 {
+    font-size: 68px;
+    line-height: 1.2;
+    color: #fff;
+    font-family: 'Halant-bold';
+    margin-bottom: 20px;
+    letter-spacing: 1.5;
+    margin-bottom: 66px;
+}
+
+.clients-feedback-wrapper .about-michael p {
+    letter-spacing: 1px;
+    width: 528px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Oswald-Regular';
+    line-height: 28px;
+    word-spacing: 2px;
+}
+
+.clients-feedback-wrapper .about-michael a {
+    color: #fff;
+    /* display: flex; */
+    justify-content: flex-end;
+    font-size: 22px;
+    display: inline-block;
+    font-family: 'Oswald-Regular';
+    max-width: 130px;
+    padding: 8px 0px;
+    background-color: #FF7B14;
+    border-radius: 50px;
+    width: 100%;
+    margin-left: 61%;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.clients-feedback-wrapper .about-michael a:hover {
+    background-color: #572B0A;
+}
+
+.about-michael {
+    margin-bottom: 54px;
+}
+
+.clients-feedback-wrapper .clients-say h4 {
+    font-size: 58px;
+    font-family: 'Halant-Regular';
+    color: #fff;
+    line-height: 1.5;
+}
+
+.clients-feedback {
+    background-image: url('../images/clients-fd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clients-say img {
+    position: absolute;
+}
+
+.clients-say p {
+    letter-spacing: 1px;
+    width: 378px;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Oswald-Regular';
+    line-height: 2;
+    word-spacing: 2px;
+    margin-left: 87px;
+}
+
+.clients-say span a {
+    color: white;
+    font-size: 19px;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'NunitoSans-Regular';
+    margin-right: 60px;
+}
+
+.client-feedback-slider .slick-dots {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 55px;
+}
+
+.client-feedback-slider .slick-dots li button {
+    display: inline-block;
+    font-size: 0px;
+    height: 10px;
+    width: 10px;
+    background-color: #FF7B14;
+    border: none;
+    margin: 2px;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.client-feedback-slider .slick-dots li.slick-active button {
+    background-color: #fff;
+}
+
+/* css for lawyer-artical section */
+.lawyer-artical {
+    padding-top: 80px;
+}
+
+.artical-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.artical-header h3 {
+    font-size: 32px;
+    color: #FF7B14;
+    font-family: 'Halant-Regular';
+}
+
+.artical-header p {
+    font-size: 22px;
+    font-family: 'NunitoSans-Italic';
+    color: #272727;
+    width: 812px;
+    margin: 0 auto;
+    line-height: 2;
+}
+
+.artical-pragraph p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-family: 'NunitoSans-Regular';
+    line-height: 28px;
+}
+
+.artical-upper-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.upper-row-left-col h3 {
+    font-size: 24px;
+    color: #FF7B14;
+    line-height: 32px;
+    font-family: 'Oswald-Regular';
+    margin-bottom: 20px;
+}
+
+.upper-row-right-col h3 {
+    font-size: 24px;
+    font-family: 'Oswald-Regular';
+    color: #FF7B14;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.upper-row-left-col p {
+    line-height: 32px;
+    color: #272727;
+    font-size: 16px;
+    font-family: 'NunitoSans-Regular';
+    margin-bottom: 40px;
+
+}
+
+.upper-row-right-col p {
+    line-height: 32px;
+    color: #272727;
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-family: 'NunitoSans-Regular';
+}
+
+.artical-lower-row {
+    margin-bottom: 10px;
+}
+
+.artical-lower-row h3 {
+    font-size: 24px;
+    font-family: 'Oswald-Regular';
+    color: #FF7B14;
+    line-height: 32px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.artical-lower-row p {
+    line-height: 32px;
+    color: #272727;
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-family: 'NunitoSans-Regular';
+}
+
+/* .......frequently-asked-questions ............*/
+.frequently-asked-questions {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.frequently-asked-questions .faq-top h2 {
+    font-size: 58px;
+    font-family: 'Halant-Regular';
+    line-height: 1;
+    color: #572B0A;
+}
+
+.frequently-asked-questions .faq-top h1 {
+    font-size: 68px;
+    color: #FF7B14;
+    line-height: 1;
+    margin-bottom: 50px;
+    font-family: 'Halant-Bold';
+}
+
+.frequently-asked-questions .faq-top p {
+    font-size: 22px;
+    font-family: 'NunitoSans-Italic';
+    color: #272727;
+    margin-bottom: 40px;
+}
+
+.frequently-asked-questions .faq-bottom h5 {
+    font-size: 28px;
+    font-family: 'Halant-Regular';
+    line-height: 1;
+    color: #272727;
+    width: 70%;
+    margin-bottom: 35px;
+    display: inline-block;
+    border-bottom: 2px solid #FF7B14;
+}
+
+.frequently-asked-questions .faq-bottom p {
+    font-size: 16px;
+    color: #272727;
+    font-family: 'NunitoSans-Regular';
+    margin-bottom: 77px;
+}
+
+.form-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 31px;
+    padding-bottom: 30px;
+    background-color: #FFDBBF;
+    top: 45px;
+    position: relative;
+    outline-offset: 14px;
+    outline: 2px solid #572B0A;
+}
+
+.form-wrapper h3 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #FF7B14;
+    font-family: 'Oswald-Regular';
+}
+
+.form-wrapper form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+
+.form-wrapper form input {
+
+    padding: 9px;
+    width: 267px;
+    background-color: transparent;
+    border: 2px solid #Fff;
+
+}
+
+.form-wrapper form input:focus {
+    outline: 2px solid #FF7B14;
+    border: none;
+
+}
+
+.form-wrapper form ::placeholder {
+    font-size: 18px;
+    font-family: 'Halant-Regular';
+    color: black;
+}
+
+.form-wrapper textarea {
+    width: 816px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    resize: none;
+
+}
+
+.form-wrapper textarea::placeholder {
+    font-size: 18px;
+    color: black;
+    font-family: 'Halant-Regular';
+}
+
+.form-wrapper textarea:focus {
+    outline: 2px solid #FF7B14;
+    border: none;
+
+}
+
+.form-wrapper a {
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 30px;
+    width: 164px;
+    text-align: center;
+    display: inline-block;
+    font-size: 22px;
+    background-color: #FF7B14;
+    padding: 10px;
+    font-family: 'Oswald-Regular';
+    transition: all 0.5s ease-in-out;
+}
+
+.form-wrapper a:hover {
+    background-color: #572B0A;
+}
+
+/* .......css for map ............*/
+.map-section {
+    background-image: url("../images/Group\ 2145.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: -10px;
+}
+
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    position: relative;
+    z-index: 999;
+    height: 100vh;
+}
+
+.map-wrapper:before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/overlay.png);
+    width: 100%;
+    height: 60%;
+    background-repeat: no-repeat;
+    top: 300px;
+    left: 231px;
+    z-index: -3;
+}
+
+.map-wrapper .address {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.map-wrapper .address h6 {
+    font-family: 'NunitoSans-Regular';
+    font-size: 16px;
+    line-height: 2;
+}
+
+.map-wrapper .address span {
+    font-family: 'NunitoSans-Regular';
+    font-size: 16px;
+    line-height: 2;
+}
+
+.map-wrapper .address span a {
+    font-size: 16px;
+    color: #FF7B14;
+    font-family: 'NunitoSans-Bold';
+
+}
+
+.map-wrapper .links a {
+    font-size: 32px;
+    color: #572B0A;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.map-wrapper .links a:hover {
+    color: #FF7B14;
+
+}
+
+/* .......css for footer ............*/
+footer {
+    background-color: #291506;
+    padding-top: 30px;
+    padding-bottom: 40px
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.footer-wrapper .footer-left-logo {
+    display: flex;
+    align-items: end;
+}
+
+.footer-wrapper .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+
+}
+
+.footer-wrapper .footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-wrapper .footer-links a {
+    color: #fff;
+    font-size: 12px;
+    font-family: 'NunitoSans-Regular';
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-wrapper .footer-links a:hover {
+    color: #FF7B14;
+}
+
+.footer-wrapper .footer-right-logo {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-wrapper .footer-left-logo {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-wrapper .footer-left-logo img {
+    margin-bottom: 10px;
+}
+
+.footer-wrapper .footer-right-logo img {
+    margin-bottom: 10px;
+}
+
+.footer-wrapper span {
+    color: #Fff;
+    font-family: 'Lato-Regular';
+    font-size: 9px;
+}
